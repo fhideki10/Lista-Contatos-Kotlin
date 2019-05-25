@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">NacFiap</string>
     <string name="action_settings">Settings</string>
+    <string name="lb_add_contact">Adicionando Contato</string>
+    <string name="txt_name">Nome</string>
+    <string name="txt_email">E-mail</string>
+
+    <string name="txt_cel">Celular</string>
+    <string name="txt_cep">Digite seu CEP</string>
+    <string name="txt_logradouro">Logradouro</string>
+    <string name="btn_cep">Pesquisar Cep</string>
+
 </resources>
