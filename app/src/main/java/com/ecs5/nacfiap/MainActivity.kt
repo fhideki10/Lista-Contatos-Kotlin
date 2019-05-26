@@ -1,5 +1,7 @@
 package com.ecs5.nacfiap
 
+import android.widget.ArrayAdapter
+import android.widget.ListView
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +11,8 @@ import android.view.MenuItem
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
+    var array = arrayOf("João Carlos", "Marcelo Santos", "Camila Buarque", "Sarah Yazaki", "Larissa", "Otamir", "Gilberto dos Reis", "Fábio", "Henrique");
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,7 +25,11 @@ class MainActivity : AppCompatActivity() {
             setContentView(R.layout.cadastro_view)
         }
 
+        val adapter = ArrayAdapter(this,
+            R.layout.listview_item , array);
 
+        val listView:ListView = findViewById(R.id.lstContatos)
+        listView.setAdapter(adapter)
 
     }
 
