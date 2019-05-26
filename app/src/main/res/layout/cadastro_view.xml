@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                              xmlns:tools="http://schemas.android.com/tools"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
                                              android:layout_width="match_parent"
-                                             android:layout_height="match_parent"
-                                             xmlns:app="http://schemas.android.com/apk/res-auto">
-
-    <android.support.v7.widget.Toolbar
-            android:layout_width="414dp"
-            android:layout_height="60dp"
-            android:theme="?attr/actionBarTheme"
-            android:minHeight="?attr/actionBarSize"
-            android:id="@+id/toolbar"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0"/>
+                                             android:layout_height="match_parent">
 
     <ImageButton
             android:layout_width="62dp"
@@ -26,7 +14,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.102" app:layout_constraintHorizontal_bias="0.074"/>
+            app:layout_constraintVertical_bias="0.036" app:layout_constraintHorizontal_bias="0.045"/>
 
     <TextView
             android:layout_width="259dp"
@@ -37,14 +25,23 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHorizontal_bias="1.0" app:layout_constraintVertical_bias="0.101"/>
+            app:layout_constraintHorizontal_bias="0.828" app:layout_constraintVertical_bias="0.036"/>
 
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/lb_nome"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintHorizontal_bias="0.069" app:layout_constraintVertical_bias="0.155"/>
     <EditText
             android:layout_width="359dp"
             android:layout_height="47dp"
             android:inputType="textPersonName"
-            android:hint="@string/txt_name"
             android:ems="10"
+            android:hint="@string/txt_nome"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -52,57 +49,78 @@
             app:layout_constraintVertical_bias="0.19"
             android:id="@+id/nomeTxt"/>
 
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/lb_email"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintHorizontal_bias="0.069" app:layout_constraintVertical_bias="0.266"/>
     <EditText
             android:layout_width="359dp"
             android:layout_height="47dp"
             android:inputType="textPersonName"
-            android:hint="@string/txt_email"
             android:ems="10"
+            android:hint="@string/txt_email"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.277"
+            app:layout_constraintVertical_bias="0.305"
             android:id="@+id/emailTxt"/>
 
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/lb_cel"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintHorizontal_bias="0.07" app:layout_constraintVertical_bias="0.372"/>
     <EditText
             android:layout_width="359dp"
             android:layout_height="47dp"
             android:inputType="textPersonName"
-            android:hint="@string/txt_cel"
             android:ems="10"
+            android:hint="@string/txt_cel"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.366"
+            app:layout_constraintVertical_bias="0.415"
             android:id="@+id/celularTxt"/>
 
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/lb_cep"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintHorizontal_bias="0.07" app:layout_constraintVertical_bias="0.483"/>
     <EditText
-            android:layout_width="189dp"
-            android:layout_height="40dp"
+            android:layout_width="207dp"
+            android:layout_height="48dp"
             android:inputType="textPersonName"
+            android:ems="10"
             android:hint="@string/txt_cep"
-            android:ems="10"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.455"
-            android:id="@+id/cepTxt" app:layout_constraintHorizontal_bias="0.117"/>
+            app:layout_constraintVertical_bias="0.531"
+            android:id="@+id/cepTxt" app:layout_constraintHorizontal_bias="0.127"/>
 
-    <EditText
-            android:layout_width="358dp"
-            android:layout_height="41dp"
-            android:inputType="textPersonName"
-            android:hint="@string/txt_logradouro"
-            android:ems="10"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.552"
-            android:id="@+id/logradouroTxt" app:layout_constraintHorizontal_bias="0.509"/>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/lb_logradouro"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintHorizontal_bias="0.077"
+              app:layout_constraintVertical_bias="0.596"/>
 
     <Button
             android:text="@string/btn_cep"
@@ -113,7 +131,85 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.902"
-            app:layout_constraintVertical_bias="0.456"/>
+            app:layout_constraintVertical_bias="0.526"/>
 
+    <EditText
+            android:layout_width="359dp"
+            android:layout_height="47dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.649"
+            android:id="@+id/logradouroTxt"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/lb_bairro"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintHorizontal_bias="0.077"
+              app:layout_constraintVertical_bias="0.689"/>
+
+    <EditText
+            android:layout_width="359dp"
+            android:layout_height="47dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.745"
+            android:id="@+id/bairroTxt" app:layout_constraintHorizontal_bias="0.557"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/lb_cidade"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintHorizontal_bias="0.079"
+              app:layout_constraintVertical_bias="0.794"/>
+
+    <EditText
+            android:layout_width="359dp"
+            android:layout_height="47dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.855"
+            android:id="@+id/cidadeTxt" app:layout_constraintHorizontal_bias="0.557"/>
+
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/lb_estado"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintHorizontal_bias="0.079"
+              app:layout_constraintVertical_bias="0.898"/>
+
+    <EditText
+            android:layout_width="359dp"
+            android:layout_height="47dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.963"
+            android:id="@+id/estadoTxt" app:layout_constraintHorizontal_bias="0.557"/>
 
 </android.support.constraint.ConstraintLayout>
