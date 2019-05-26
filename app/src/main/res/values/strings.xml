@@ -12,7 +12,7 @@
     <string name="lb_cel">Celular</string>
     <string name="txt_cel">Digite seu celular</string>
 
-    <string name="lb_cep">Celular</string>
+    <string name="lb_cep">Cep</string>
     <string name="txt_cep">Digite seu CEP...</string>
 
     <string name="lb_logradouro">Logradouro</string>
@@ -22,4 +22,5 @@
     <string name="lb_cidade">Cidade</string>
     <string name="lb_estado">Estado</string>
 
+    <string name="btn_salvar">Salvar Contato</string>
 </resources>

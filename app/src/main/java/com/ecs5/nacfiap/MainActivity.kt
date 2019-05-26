@@ -7,8 +7,8 @@ import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu
 import android.view.MenuItem
-
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.cadastro_view.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -23,6 +23,16 @@ class MainActivity : AppCompatActivity() {
             /*Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()*/
             setContentView(R.layout.cadastro_view)
+
+            btnVoltar.setOnClickListener{
+                setContentView(R.layout.activity_main)
+
+                val adapter = ArrayAdapter(this,
+                    R.layout.listview_item , array);
+
+                val listView:ListView = findViewById(R.id.lstContatos)
+                listView.setAdapter(adapter)
+            }
         }
 
         val adapter = ArrayAdapter(this,

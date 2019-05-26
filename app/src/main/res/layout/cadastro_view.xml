@@ -8,13 +8,14 @@
     <ImageButton
             android:layout_width="62dp"
             android:layout_height="45dp" app:srcCompat="?attr/actionModeCloseDrawable"
-            android:id="@+id/voltar"
+            android:id="@+id/btnVoltar"
             android:background="@color/cardview_light_background"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.036" app:layout_constraintHorizontal_bias="0.045"/>
+            app:layout_constraintVertical_bias="0.036"
+            app:layout_constraintHorizontal_bias="0.045"/>
 
     <TextView
             android:layout_width="259dp"
@@ -35,7 +36,7 @@
               app:layout_constraintLeft_toLeftOf="parent"
               app:layout_constraintRight_toRightOf="parent"
               app:layout_constraintTop_toTopOf="parent"
-              app:layout_constraintHorizontal_bias="0.069" app:layout_constraintVertical_bias="0.155"/>
+              app:layout_constraintHorizontal_bias="0.069" app:layout_constraintVertical_bias="0.109"/>
     <EditText
             android:layout_width="359dp"
             android:layout_height="47dp"
@@ -46,7 +47,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.19"
+            app:layout_constraintVertical_bias="0.141"
             android:id="@+id/nomeTxt"/>
 
     <TextView android:layout_width="wrap_content"
@@ -56,7 +57,7 @@
               app:layout_constraintLeft_toLeftOf="parent"
               app:layout_constraintRight_toRightOf="parent"
               app:layout_constraintTop_toTopOf="parent"
-              app:layout_constraintHorizontal_bias="0.069" app:layout_constraintVertical_bias="0.266"/>
+              app:layout_constraintHorizontal_bias="0.067" app:layout_constraintVertical_bias="0.21"/>
     <EditText
             android:layout_width="359dp"
             android:layout_height="47dp"
@@ -67,7 +68,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.305"
+            app:layout_constraintVertical_bias="0.247"
             android:id="@+id/emailTxt"/>
 
     <TextView android:layout_width="wrap_content"
@@ -77,7 +78,7 @@
               app:layout_constraintLeft_toLeftOf="parent"
               app:layout_constraintRight_toRightOf="parent"
               app:layout_constraintTop_toTopOf="parent"
-              app:layout_constraintHorizontal_bias="0.07" app:layout_constraintVertical_bias="0.372"/>
+              app:layout_constraintHorizontal_bias="0.068" app:layout_constraintVertical_bias="0.32"/>
     <EditText
             android:layout_width="359dp"
             android:layout_height="47dp"
@@ -88,8 +89,8 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.415"
-            android:id="@+id/celularTxt"/>
+            app:layout_constraintVertical_bias="0.361"
+            android:id="@+id/celularTxt" app:layout_constraintHorizontal_bias="0.48"/>
 
     <TextView android:layout_width="wrap_content"
               android:layout_height="wrap_content"
@@ -98,7 +99,7 @@
               app:layout_constraintLeft_toLeftOf="parent"
               app:layout_constraintRight_toRightOf="parent"
               app:layout_constraintTop_toTopOf="parent"
-              app:layout_constraintHorizontal_bias="0.07" app:layout_constraintVertical_bias="0.483"/>
+              app:layout_constraintHorizontal_bias="0.068" app:layout_constraintVertical_bias="0.429"/>
     <EditText
             android:layout_width="207dp"
             android:layout_height="48dp"
@@ -109,8 +110,8 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.531"
-            android:id="@+id/cepTxt" app:layout_constraintHorizontal_bias="0.127"/>
+            app:layout_constraintVertical_bias="0.475"
+            android:id="@+id/cepTxt" app:layout_constraintHorizontal_bias="0.122"/>
 
     <TextView android:layout_width="wrap_content"
               android:layout_height="wrap_content"
@@ -119,8 +120,8 @@
               app:layout_constraintLeft_toLeftOf="parent"
               app:layout_constraintRight_toRightOf="parent"
               app:layout_constraintTop_toTopOf="parent"
-              app:layout_constraintHorizontal_bias="0.077"
-              app:layout_constraintVertical_bias="0.596"/>
+              app:layout_constraintHorizontal_bias="0.074"
+              app:layout_constraintVertical_bias="0.537"/>
 
     <Button
             android:text="@string/btn_cep"
@@ -131,7 +132,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.902"
-            app:layout_constraintVertical_bias="0.526"/>
+            app:layout_constraintVertical_bias="0.471"/>
 
     <EditText
             android:layout_width="359dp"
@@ -142,8 +143,8 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.649"
-            android:id="@+id/logradouroTxt"/>
+            app:layout_constraintVertical_bias="0.586"
+            android:id="@+id/logradouroTxt" app:layout_constraintHorizontal_bias="0.48"/>
 
     <TextView android:layout_width="wrap_content"
               android:layout_height="wrap_content"
@@ -152,8 +153,8 @@
               app:layout_constraintLeft_toLeftOf="parent"
               app:layout_constraintRight_toRightOf="parent"
               app:layout_constraintTop_toTopOf="parent"
-              app:layout_constraintHorizontal_bias="0.077"
-              app:layout_constraintVertical_bias="0.689"/>
+              app:layout_constraintHorizontal_bias="0.067"
+              app:layout_constraintVertical_bias="0.64"/>
 
     <EditText
             android:layout_width="359dp"
@@ -164,8 +165,8 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.745"
-            android:id="@+id/bairroTxt" app:layout_constraintHorizontal_bias="0.557"/>
+            app:layout_constraintVertical_bias="0.694"
+            android:id="@+id/bairroTxt" app:layout_constraintHorizontal_bias="0.48"/>
 
     <TextView android:layout_width="wrap_content"
               android:layout_height="wrap_content"
@@ -174,8 +175,8 @@
               app:layout_constraintLeft_toLeftOf="parent"
               app:layout_constraintRight_toRightOf="parent"
               app:layout_constraintTop_toTopOf="parent"
-              app:layout_constraintHorizontal_bias="0.079"
-              app:layout_constraintVertical_bias="0.794"/>
+              app:layout_constraintHorizontal_bias="0.068"
+              app:layout_constraintVertical_bias="0.744"/>
 
     <EditText
             android:layout_width="359dp"
@@ -186,8 +187,8 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.855"
-            android:id="@+id/cidadeTxt" app:layout_constraintHorizontal_bias="0.557"/>
+            app:layout_constraintVertical_bias="0.802"
+            android:id="@+id/cidadeTxt" app:layout_constraintHorizontal_bias="0.48"/>
 
 
     <TextView android:layout_width="wrap_content"
@@ -197,8 +198,8 @@
               app:layout_constraintLeft_toLeftOf="parent"
               app:layout_constraintRight_toRightOf="parent"
               app:layout_constraintTop_toTopOf="parent"
-              app:layout_constraintHorizontal_bias="0.079"
-              app:layout_constraintVertical_bias="0.898"/>
+              app:layout_constraintHorizontal_bias="0.068"
+              app:layout_constraintVertical_bias="0.848"/>
 
     <EditText
             android:layout_width="359dp"
@@ -209,7 +210,18 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.963"
-            android:id="@+id/estadoTxt" app:layout_constraintHorizontal_bias="0.557"/>
+            app:layout_constraintVertical_bias="0.91"
+            android:id="@+id/estadoTxt" app:layout_constraintHorizontal_bias="0.48"/>
+    <Button
+            android:text="@string/btn_salvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSalvarContato"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.475"
+            app:layout_constraintVertical_bias="0.992"/>
+
 
 </android.support.constraint.ConstraintLayout>
